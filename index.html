@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avalie Mentoria</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Staatliches&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./assets/styles.css">
+</head>
+
+<body>
+
+    <div class="page">
+        <header>
+            <h1>Avalie a sua mentoria</h1>
+            <p>Chegou a hora de avaliar o seu mentor. Bora lá?</p>
+            <img src="./assets/images/img1.svg" alt="Imagem com a nota de avaliação em estrelas">
+            <h2>Informações Pessoais</h2>
+        </header>
+
+        <form>
+            <section class="user-section">
+                <div class="input-wrapper-user">
+                    <div class="input-wrapper-name">
+                        <div class="input-wrapper-itens">
+                            <label for="name">Nome</label>
+                            <input type="text" name="name" id="name">
+                        </div>
+
+                        <div class="input-wrapper-itens">
+                            <label for="surname">Sobrenome</label>
+                            <input type="text" name="surname" id="surname">
+                        </div>
+                    </div>
+
+
+                    <div class="input-wrapper-email">
+                        <label for="email">Email <span>(Digite um email válido)</span></label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                </div>
+            </section>
+
+            <section class="mentor-section">
+                <p>Informações do mentor</p>
+
+                <div class="input-wrapper-mentor-name">
+                    <label for="mentor-name">Selecione quem foi o seu mentor</label>
+                    <select name="mentor-name" id="mentor-name">
+                        <option value=""></option>
+                        <option value="felipe">Felipe</option>
+                        <option value="gabriel">Gabriel</option>
+                        <option value="renato">Renato</option>
+                    </select>
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="feedback">Feedback sobre o mentor</label>
+                    <textarea name="feedback" id="feedback"></textarea>
+                </div>
+
+                <div class="input-wrapper-checkbox">
+                    <input type="checkbox" name="checkbox-mentory" id="checkbox-mentory">
+                    <label for="checkbox-mentory">Todas as minhas dúvidas foram esclarecidas durante a mentoria.</label>
+                </div>
+            </section>
+
+            <section class="mentory-schedule-section">
+                <div class="input-wrapper">
+                    <p>Agendando próxima mentoria</p>
+                </div>
+    
+                <div class="input-wrapper-schedule">
+                    <div class="input-wrapper-date">
+                        <label for="date-mentory">Data <span>(DD/MM/AAAA)</span></label>
+                        <input type="date" name="date-mentory" id="date-mentory">
+                    </div>
+        
+                    <div class="input-wrapper-hour">
+                        <div class="input-wrapper">
+                            <label for="mentory-start">Das</label>
+                            <input type="time" name="mentory-start" id="mentory-start">
+                        </div>
+            
+                        <div class="input-wrapper">
+                            <label for="mentory-end">Até</label>
+                            <input type="time" name="mentory-end" id="mentory-end">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="button-wrapper">
+                <button>Salvar</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
